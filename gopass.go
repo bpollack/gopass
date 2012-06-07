@@ -61,7 +61,6 @@ func GetPass(prompt string) (passwd string, err error) {
 	} else {
 		err = fmt.Errorf("failed during password entry: %s", err)
 	}
-	fmt.Printf("passwd: %s\n", passwd)
 
 	// Turn on the terminal echo.
 	pid, e := syscall.ForkExec(sttyArg0, sttyArgvEOn, &syscall.ProcAttr{Dir: exec_cwdir, Files: fd})
