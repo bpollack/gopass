@@ -55,7 +55,6 @@ func GetPass(prompt string) (passwd string, err error) {
 	syscall.Wait4(pid, &ws, 0, nil)
 
 	line, err := rd.ReadString('\n')
-	fmt.Println(line)
 	if err == nil {
 		passwd = strings.TrimSpace(line)
 	} else {
