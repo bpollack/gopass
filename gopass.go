@@ -11,7 +11,7 @@ The libary currently supports unix systems by manipulating stty.
 This code is based upon code by RogerV in the golang-nuts thread:
 https://groups.google.com/group/golang-nuts/browse_thread/thread/40cc41e9d9fc9247
 */
-package main
+package gopass
 
 import (
 	"bufio"
@@ -107,12 +107,5 @@ func catchSignal(fd []uintptr, sig chan os.Signal, brk chan bool) {
 		echoOn(fd)
 		os.Exit(-1)
 	case <-brk:
-	}
-}
-
-func main() {
-	_, err := GetPass("Type somthing: ")
-	if err != nil {
-		panic(err)
 	}
 }
