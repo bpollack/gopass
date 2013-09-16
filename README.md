@@ -2,12 +2,13 @@
 
 gopass is a cross-platform library to read passwords from the terminal
 without echoing input.  At the moment, gopass is known to work on OS X,
-Linux, and FreeBSD.
+Linux, FreeBSD, and Windows.
 
 ## Getting gopass
 
 The usual `go get github.com/bpollack/gopass` is all you need to install
-gopass.
+gopass.  Note that, to build gopass on Windows, you will need an appropriate
+MinGW installation available in your path to build the cgo module.
 
 ## Usage
 
