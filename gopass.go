@@ -1,3 +1,4 @@
+// +build !windows
 // Author: johnsiilver@gmail.com (John Doak)
 
 /*
