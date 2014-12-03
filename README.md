@@ -18,7 +18,7 @@ trailing whitespace removed.  The correct usage is the rather
 straight-forward
 
     name, err := gopass.GetPass("Enter your password: ")
-    if err != nil {
+    if err == nil {
         fmt.Printf("Your password is %v\n", name)
     }
 
